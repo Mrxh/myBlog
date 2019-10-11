@@ -1,6 +1,8 @@
 import mongoose from 'mongoose'
 import chalk from 'chalk'
 
+mongoose.set('useFindAndModify', false)
+
 const db = mongoose.createConnection('mongodb://127.0.0.1:27017/xhblog')
 
 const success = chalk.bold.green

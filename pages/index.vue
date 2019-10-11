@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <twoparent>
     <div class="article">
       <nav class="article-nav">
         <el-carousel height="300px">
@@ -32,15 +32,17 @@
         <img src="namecard/mmqrcode1570636853247.png" alt="我的微信">
       </div>
     </div>
-  </div>
+  </twoparent>
 </template>
 
 <script>
+  import twoparent from '~/components/twoparent/twoparent'
   import articletjitem from '~/components/articletjitem'
   export default {
     name: "personBlog",
     components:{
-      articletjitem
+      articletjitem,
+      twoparent
     },
     data(){
       return {
@@ -80,12 +82,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .container{
-    width: 70%;
-    min-height: 700px;
-    display: flex;
-    margin: 0.32rem auto;
-    overflow: hidden;
     .article{
       flex:9;
       border-radius: .106667rem;
@@ -145,11 +141,8 @@
         }
       }
     }
-  }
+
   @media screen and (max-width: 1023px){
-    .container{
-      width: 100%;
-      display: block;
       .siderbar{
         width: 100%;
         margin: 20px 0 0 0;
@@ -157,6 +150,5 @@
           margin: 20px 0 0 0;
         }
       }
-    }
   }
 </style>

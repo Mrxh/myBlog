@@ -1,5 +1,5 @@
 <template>
-    <div class="p-container">
+    <singleparent>
         <div class="p-title">
             <h1>我的相册</h1>
         </div>
@@ -17,10 +17,11 @@
         </div>
         <i class="el-icon-arrow-right" @click.stop="changeImg(1)"></i>
       </div>
-    </div>
+    </singleparent>
 </template>
 
 <script>
+  import singleparent from '~/components/singleparent/singleparent'
     export default {
         name: "photos",
         data() {
@@ -30,6 +31,9 @@
             isdetail:false
           }
         },
+       components:{
+         singleparent
+       },
         methods:{
           async getData() {
             let ret = await this.$http.get('/photos/getPhotos')
@@ -62,15 +66,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .p-container{
-    width: 70%;
-    background: #fff;
-    min-height: 700px;
-    border-radius: 5px;
-    margin: 0 auto;
-    padding: 20px;
-    overflow: auto;
-    position: relative;
     .p-title{
       h1{
         text-align: center;
@@ -119,45 +114,30 @@
     .show{
       display: block;
     }
-  }
 
 
   @media screen and (min-width: 768px){
-    .p-container {
       .p-content {
         .p-content-box {
           column-count: 2;
         }
       }
-    }
   }
 
   @media screen and (min-width: 1024px){
-    .p-container {
       .p-content {
         .p-content-box {
-          column-count: 3;
+          column-count: 2;
         }
       }
-    }
   }
 
   @media screen and (min-width: 1200px){
-    .p-container {
       .p-content {
         .p-content-box {
           column-count: 4;
         }
       }
-    }
-  }
-
-  @media screen and (max-width: 1200px){
-    .p-container {
-      width: -moz-calc(100% - 40px);
-      width: -webkit-calc(100% - 40px);
-      width: calc(100% - 40px);
-    }
   }
 
 </style>

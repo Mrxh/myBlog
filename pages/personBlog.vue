@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <twoparent>
     <div class="article">
       <nav class="article-nav">
         <ul class="article-nav-box">
@@ -29,17 +29,19 @@
       <siderbar :siderData="categeryData" @getcat="getCArticle"></siderbar>
       <siderbar :siderData="linkData"></siderbar>
     </div>
-  </div>
+  </twoparent>
 </template>
 
 <script>
+  import twoparent from '~/components/twoparent/twoparent'
   import siderbar from '~/components/siderbar'
   import articleitem from '~/components/articleitem'
   export default {
     name: "personBlog",
     components:{
       siderbar,
-      articleitem
+      articleitem,
+      twoparent
     },
     data(){
       return {
@@ -132,12 +134,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .container{
-    width: 70%;
-    min-height: 700px;
-    display: flex;
-    margin: 0.32rem auto;
-    overflow: hidden;
     .article{
       flex:9;
       border-radius: .106667rem;
@@ -185,11 +181,8 @@
       margin-left: .32rem;
       width: 300px;
     }
-  }
+
   @media screen and (max-width: 1023px){
-    .container{
-      width: 100%;
-      display: block;
       .siderbar{
         width: 100%;
         margin: 20px 0 0 0;
@@ -197,6 +190,5 @@
           margin: 20px 0 0 0;
         }
       }
-    }
   }
 </style>

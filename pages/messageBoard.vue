@@ -1,5 +1,5 @@
 <template>
-    <div class="b-message">
+    <singleparent>
          <div class="b-title">
              <h1>留言板</h1>
          </div>
@@ -54,12 +54,16 @@
                </ul>
             </div>
         </div>
-    </div>
+    </singleparent>
 </template>
 
 <script>
+  import singleparent from '~/components/singleparent/singleparent'
     export default {
         name: "messageBoard",
+      components:{
+        singleparent
+      },
       data(){
         return {
           labelPosition: 'right',
@@ -180,13 +184,6 @@
 </script>
 
 <style lang="scss" scoped>
-    .b-message{
-      width: 70%;
-      background: #fff;
-      min-height: 700px;
-      border-radius: 5px;
-      margin: 0 auto;
-      padding: 20px;
       .b-title{
         h1{
           text-align: center;
@@ -250,14 +247,5 @@
           }
         }
       }
-    }
 
-    @media screen and (max-width: 1023px){
-      .b-message{
-        width: -moz-calc(100% - 40px);
-        width: -webkit-calc(100% - 40px);
-        width: calc(100% - 40px);
-        display: block;
-      }
-    }
 </style>

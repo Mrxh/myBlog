@@ -1,5 +1,5 @@
 <template>
-      <div class="container">
+      <singleparent>
         <h1>
           <img src="~assets/img/logo.png" alt="我的博客logo">
         </h1>
@@ -16,23 +16,20 @@
 
         <p>博客的风格：简单明了，清晰可见。</p>
         <p>最后，祝大家工作顺心，技术越来越强！</p>
-      </div>
+      </singleparent>
 </template>
 
 <script>
+    import singleparent from '~/components/singleparent/singleparent'
     export default {
-        name: "about"
+        name: "about",
+        components:{
+          singleparent
+        }
     }
 </script>
 
 <style lang="scss" scoped>
-  .container {
-    width: 70%;
-    min-height: 700px;
-    margin: 0.32rem auto;
-    overflow: hidden;
-    background: #fff;
-    padding: 2rem;
     h1{
       text-align: center;
       padding: 4rem 0;
@@ -44,5 +41,5 @@
       color: #666;
       text-indent: 2em;
     }
-  }
+
 </style>
