@@ -22,7 +22,7 @@ $ npm run generate
 1. 1.vue + vuex + vue-router +nuxt
 2. 2.koa + mongodb + elementui
 
-![tx1.jpg](tx1.jpg)
+![tx1.jpg](https://raw.githubusercontent.com/Mrxh/myBlog/master/static/img/1.jpg)
 
 # 数据库设置
 1.找到server/model/db.js文件
