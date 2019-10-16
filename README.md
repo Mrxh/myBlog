@@ -19,10 +19,10 @@ $ npm run start
 $ npm run generate
 ```
 # 相关技术栈
-1.vue + vuex + vue-router +nuxt
-2.koa + mongodb + elementui
+1. 1.vue + vuex + vue-router +nuxt
+2. 2.koa + mongodb + elementui
 
-![tx1.jpg](tx1)
+![static/tx1.jpg](tx1)
 
 # 数据库设置
 1.找到server/model/db.js文件
