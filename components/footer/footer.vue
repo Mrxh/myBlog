@@ -1,9 +1,7 @@
 <template>
   <div class="footer">
           <div class="file">
-            www.Mrxh.com - xh博客 Copyright© Author xh itbo@163.com
-
-            粤ICP备18001135号-3
+              xh博客
           </div>
   </div>
 </template>

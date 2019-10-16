@@ -3,7 +3,9 @@ import chalk from 'chalk'
 
 mongoose.set('useFindAndModify', false)
 
-const db = mongoose.createConnection('mongodb://127.0.0.1:27017/xhblog')
+const url = 'mongodb://127.0.0.1:27017/xhblog'
+
+const db = mongoose.createConnection(url)
 
 const success = chalk.bold.green
 const error = chalk.bold.red
