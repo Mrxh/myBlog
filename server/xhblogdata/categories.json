@@ -1,0 +1,11 @@
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add1" }, "typeid" : 1, "typename" : "html", "__v" : 0, "catnum" : 1 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add2" }, "typeid" : 2, "typename" : "css", "__v" : 0, "catnum" : 1 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add6" }, "typeid" : 6, "typename" : "HTTP", "__v" : 0, "catnum" : 1 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add3" }, "typeid" : 3, "typename" : "javaScript", "__v" : 0, "catnum" : 5 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add8" }, "typeid" : 8, "typename" : "算法", "__v" : 0, "catnum" : 0 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add7" }, "typeid" : 7, "typename" : "数据结构", "__v" : 0, "catnum" : 0 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add4" }, "typeid" : 4, "typename" : "Vue.js", "__v" : 0, "catnum" : 0 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add5" }, "typeid" : 5, "typename" : "Node.js", "__v" : 0, "catnum" : 2 }
+{ "_id" : { "$oid" : "5d9201466d6c3958a0c5add9" }, "typeid" : 9, "typename" : "高数", "__v" : 0 }
+
+
