@@ -48,7 +48,7 @@ db.on('error',callback=>{
 
 export default db
 ```
-2.找到static/xhblogdata目录下数据导入mongodb
+2.找到server/xhblogdata目录下数据导入mongodb
 
 ## 相关截图
 ![jt001.png](https://raw.githubusercontent.com/Mrxh/myBlog/master/static/jt001.png)
